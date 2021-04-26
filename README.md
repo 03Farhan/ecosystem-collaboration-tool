@@ -18,8 +18,16 @@ An IBM Cloud account is required to run this webapp. After creating an account f
 
 ![resource list](./documentation/resource-list.png)
 
-5. Copy the API Key and URL as these will be required later. Click "Launch Discovery".
+5. Copy the API Key and paste it to replace "<api_key>" in the template.env file and then copy the URL and paste it to replace "<service_url>" in the template.env file. Click "Launch Discovery".
 
-![resource list](./documentation/instance-overview.png)
+![instance overview](./documentation/instance-overview.png)
+
+6. Click on "Upload your own data" and enter a collection name (e.g. "Ecosystem Collaboration Tool") and then click "Create".
+
+![create collection](./documentation/create-collection.png)
+
+7. Once the collection has been made, click the API button near the top right and copy the "Collection ID" and "Environment ID" and paste it to replace the "<collection_id>" and "<environment_id>" respectively.
+
+![collection API](./documentation/collection-api.png)
 
 Docker is required to run this project and will eliminate the need to install other dependencies onto your machine. Once Docker is installed and running, ensure that ports 3000 and 9000 are not being used by other programs. Now simply open terminal in this directory and run "docker-compose up" to start the webapp. Navigate to localhost:3000 on a browser and enjoy!
