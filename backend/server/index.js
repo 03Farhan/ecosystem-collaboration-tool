@@ -1,3 +1,5 @@
+// https://github.com/IBM/watson-discovery-food-reviews
+
 "use strict";
 
 const {
