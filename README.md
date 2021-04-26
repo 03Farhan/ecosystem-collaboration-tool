@@ -6,7 +6,7 @@ An IBM Cloud account is required to run this webapp. After creating an account f
 
 ![dashboard](./documentation/dashboard.png)
 
-2. Type "Watson Discovery" into the search field and click on Watson Discovery. This will redirect you to a page where you can create a new free Watson Discovery Instance.
+2. Type "Watson Discovery" into the search field and click on Watson Discovery. This will redirect you to a page where you can create a new free "lite" Watson Discovery Instance.
 
 ![create resource](./documentation/create-resource.png)
 
@@ -14,7 +14,7 @@ An IBM Cloud account is required to run this webapp. After creating an account f
 
 ![sidebar](./documentation/sidebar.png)
 
-4. Click on the new the new instance that you have created under the "Services" tab.
+4. Click on the new the new instance that you have created under the "Services" tab. It may take a few minutes for the new instance to be deployed fully.
 
 ![resource list](./documentation/resource-list.png)
 
@@ -22,7 +22,7 @@ An IBM Cloud account is required to run this webapp. After creating an account f
 
 ![instance overview](./documentation/instance-overview.png)
 
-6. Click on "Upload your own data" and enter a collection name (e.g. "Ecosystem Collaboration Tool") and then click "Create".
+6. Click on "Upload your own data" and enter a collection name (e.g. "Ecosystem Collaboration Tool") and then click "Create". (When you click on "Upload you own data", you may see a prompt regarding setting up Discovery for your own private data. Just click on "Set up with current plan" to continue).
 
 ![create collection](./documentation/create-collection.png)
 

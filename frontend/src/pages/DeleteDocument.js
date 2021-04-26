@@ -52,6 +52,7 @@ function DeleteDocument() {
             variant="danger"
             onClick={handleDelete}
             style={{ margin: "5px" }}
+            disabled={documentsSelected.length === 0}
           >
             Delete
           </Button>
