@@ -2,7 +2,7 @@
 
 This project uses IBM Watson Discovery to build a platform for promoting collaboration. It allows companies to sign up to the platform and project managers to search for companies to collaborate with. This is proof of concept project that runs locally using [Docker](https://www.docker.com). Dummy data is uploaded to the Discovery Collection when the project is first run.
 
-### Running the project
+## Running the project
 
 An [IBM Cloud](https://cloud.ibm.com/registration) account is required to run this webapp. After creating an account, follow these instructions in order to create a Watson Collection. Information about the collection needs to be entered in the template.env file located in "./backend" so the webapp can access the Collection. The following instructions describe how to do this:
 
@@ -38,13 +38,13 @@ An [IBM Cloud](https://cloud.ibm.com/registration) account is required to run th
 
 Now that Watson Discovery is setup, [Docker](https://www.docker.com) is required to run this project and will eliminate the need to install dependencies onto your machine. Once Docker is installed and running, ensure that ports 3000 and 9000 are not being used by other programs. Now simply open terminal in this directory and run the command `docker-compose up` to start the webapp. Navigate to `http://localhost:3000` on a browser and enjoy!
 
-### Using the project
+## Using the project
 
 There are three use cases for this project which are outlined in the use case diagram below.
 
 ![use case diagram](./documentation/use-cases.png)
 
-#### Sign Up
+### Sign Up
 
 For a user to sign up, they need to navigate to the sign up page by either clicking on the sign up button on the homepage or by navigating to `http://localhost:3000/signup`.
 ![sign up page](./documentation/sign-up1.png)
@@ -53,7 +53,7 @@ After filling out the required information in the sign-up form, the user can sub
 A success message will be displayed that indicates that the sign up has been successful.
 ![sign up success](./documentation/sign-up3.png)
 
-#### Collaboration Search
+### Collaboration Search
 
 In order for a user to search the platform, they need to navigate to the collaboration page by either clicking on the collaborate button on the homepage or navbar, or by navigating to `http://localhost:3000/collab`. This page allows users to enter their project requirements and submit the form to see the results.
 ![collaboration page](./documentation/collab1.png)
@@ -63,7 +63,7 @@ Here the user is able to change the number of results per page, lock results and
 ![collaboration graph](./documentation/company-information.png)
 Locking a company ensures that a particular result stays on the graph even when the page is changed. It also adds a tab at the bottom which shows that company's information.
 
-#### Removing Companies
+### Removing Companies
 
 A company is removed from the platform by deleting that company's document from the Discovery Collection. This can be done from the Delete Documents page that can be navigated to from the navbar or by entering the URL `http://localhost:3000/withdraw`.
 ![delete documents](./documentation/delete-documents.png)
