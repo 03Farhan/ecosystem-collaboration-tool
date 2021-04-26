@@ -11,6 +11,8 @@ services:
       - CHOKIDAR_USEPOLLING=true
 
   backend:
+    env_file:
+      - ./backend/.env
     image: 03farhan/ect/backend
     volumes:
       - "./backend:/backend"
