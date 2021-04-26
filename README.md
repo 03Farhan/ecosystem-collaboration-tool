@@ -1,6 +1,6 @@
 ## Welcome to Ecoystem Collaboration Tool.
 
-An IBM Cloud account is required to run this webapp. After creating an account follow these instructions in order to create your Watson Collection.
+An IBM Cloud account is required to run this webapp. After creating an account follow these instructions in order to create your Watson Collection and enter the information to access the Collection in the template.env file located in "./backend".
 
 1. Login to your account and click on "Create resource".
 
@@ -30,4 +30,6 @@ An IBM Cloud account is required to run this webapp. After creating an account f
 
 ![collection API](./documentation/collection-api.png)
 
-Docker is required to run this project and will eliminate the need to install other dependencies onto your machine. Once Docker is installed and running, ensure that ports 3000 and 9000 are not being used by other programs. Now simply open terminal in this directory and run "docker-compose up" to start the webapp. Navigate to localhost:3000 on a browser and enjoy!
+8. Rename the template.env file to ".env".
+
+Now that Watson Discovery is setup, Docker is required to run this project and will eliminate the need to install dependencies onto your machine. Once Docker is installed and running, ensure that ports 3000 and 9000 are not being used by other programs. Now simply open terminal in this directory and run "docker-compose up" to start the webapp. Navigate to localhost:3000 on a browser and enjoy!
