@@ -51,12 +51,12 @@ After creating an IBM Cloud account, follow these instructions in order to creat
 
 ### Running the project
 
-1. Open Terminal again and enter the repository folder.
+1. Open Terminal again and enter the repository folder.  
    `> cd ecosystem-collaboration-tool`
-2. Rename the 'template.env' file to '.env'.
+2. Rename the 'template.env' file to '.env'.  
    `> mv backend/template.env backend/.env`
 3. Start Docker and wait until it is running. Ensure that ports 3000 and 9000 are not being used by any other programs.
-4. Start the web application
+4. Start the web application  
    `docker-compose up`
 5. Navigate to `http://localhost:3000` on a browser and enjoy!
 
@@ -64,9 +64,9 @@ After creating an IBM Cloud account, follow these instructions in order to creat
 
 The webapp will still be running if it has not been manually closed even if the Terminal app has been closed. To check if the webapp is still running, either navigate to `http://localhost:3000` on a new window or run `docker ps` in Terminal. If the two containers for this webapp are shown, the project is still running. Even if the webapp is not running, follow step 2 to remove containers, networks, volumes, and images created by `docker-compose up`.
 
-1. Open Terminal again and enter the repository folder.
+1. Open Terminal again and enter the repository folder.  
    `> cd ecosystem-collaboration-tool`
-2. Run the following command.
+2. Run the following command.  
    `> docker-compose down`
 
 ## Using the project
