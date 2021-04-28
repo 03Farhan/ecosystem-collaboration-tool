@@ -44,8 +44,8 @@ function GraphLines(props) {
             x2={props.xcoords[colIndex + 1]}
             y2={props.ycoords[nextColNode]}
             stroke="white"
-            strokeDasharray="500"
-            strokeDashoffset="500"
+            strokeDasharray="2000"
+            strokeDashoffset="2000"
             strokeWidth="5"
             opacity={opacity}
           >

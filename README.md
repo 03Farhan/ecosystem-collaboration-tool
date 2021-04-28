@@ -1,10 +1,25 @@
 # Welcome to Ecoystem Collaboration
 
-This project uses IBM Watson Discovery to build a platform for promoting collaboration. It allows companies to sign up to the platform and project managers to search for companies to collaborate with. This is proof of concept project that runs locally using [Docker](https://www.docker.com). Dummy data is uploaded to the Discovery Collection when the project is first run.
+This project uses IBM Watson Discovery to build a platform for promoting collaboration. It allows companies to sign up to the platform and project managers to search for companies to collaborate with. This is proof of concept project that runs locally using [Docker](https://www.docker.com) which eliminates the need to install dependencies onto your machine. Dummy data is uploaded to the Discovery Collection when the project is first run.
 
-## Running the project
+## Prerequisites for running the
 
-An [IBM Cloud](https://cloud.ibm.com/registration) account is required to run this webapp. After creating an account, follow these instructions in order to create a Watson Collection. Information about the collection needs to be entered in the template.env file located in "./backend" so the webapp can access the Collection. The following instructions describe how to do this:
+- Create an IBM Cloud account. Accounts can be created for free [here](https://cloud.ibm.com/registration).
+- Download and install [Docker](https://www.docker.com/get-started).
+
+## Preparing and running the project
+
+Once all the prerequisites have been met, you will need to clone this repository and then create a Discovery Collection.
+
+### Cloning this repository
+
+1. Open Terminal
+2. Clone the Repository
+   `> git clone https://github.com/03Farhan/ecosystem-collaboration-tool.git`
+
+### Creating a Discovery Collection
+
+After creating an IBM Cloud account, follow these instructions in order to create a Watson Collection. Information about the collection needs to be entered in the `template.env` file located in `./backend` so that the webapp can access the Collection. The following instructions describe how to do this:
 
 1. Login to your account and click on "Create resource".
 
@@ -34,9 +49,25 @@ An [IBM Cloud](https://cloud.ibm.com/registration) account is required to run th
 
 ![collection API](./documentation/collection-api.png)
 
-8. Rename the template.env file to ".env".
+### Running the project
 
-Now that Watson Discovery is setup, [Docker](https://www.docker.com) is required to run this project and will eliminate the need to install dependencies onto your machine. Once Docker is installed and running, ensure that ports 3000 and 9000 are not being used by other programs. Now simply open terminal in this directory and run the command `docker-compose up` to start the webapp. Navigate to `http://localhost:3000` on a browser and enjoy!
+1. Open Terminal again and enter the repository folder.
+   `> cd ecosystem-collaboration-tool`
+2. Rename the 'template.env' file to '.env'.
+   `> mv backend/template.env backend/.env`
+3. Start Docker and wait until it is running. Ensure that ports 3000 and 9000 are not being used by any other programs.
+4. Start the web application
+   `docker-compose up`
+5. Navigate to `http://localhost:3000` on a browser and enjoy!
+
+### Terminating the webapp
+
+The webapp will still be running if it has not been manually closed even if the Terminal app has been closed. To check if the webapp is still running, either navigate to `http://localhost:3000` on a new window or run `docker ps` in Terminal. If the two containers for this webapp are shown, the project is still running. Even if the webapp is not running, follow step 2 to remove containers, networks, volumes, and images created by `docker-compose up`.
+
+1. Open Terminal again and enter the repository folder.
+   `> cd ecosystem-collaboration-tool`
+2. Run the following command.
+   `> docker-compose down`
 
 ## Using the project
 
