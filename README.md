@@ -14,7 +14,7 @@ Once all the prerequisites have been met, you will need to clone this repository
 ### Cloning this repository
 
 1. Open Terminal
-2. Clone the Repository
+2. Clone the Repository  
    `> git clone https://github.com/03Farhan/ecosystem-collaboration-tool.git`
 
 ### Creating a Discovery Collection
